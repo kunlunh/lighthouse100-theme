@@ -1,0 +1,31 @@
+{{ define "main" -}}
+<div class="col-sm-12">
+	<h1>
+  		搜索
+  	</h1>
+		
+		<form onsubmit="return false" action="##" method="post">
+
+
+			<label for="keyword" class="sr-only">关键字</label>
+			<input type="text" class="form-control text-light bg-dark" id="keyword" placeholder="请输入关键字">
+
+		  <button id="tet" type="submit" class="btn btn-secondary mb-2" >搜索</button>
+		</form>
+		
+		<small>
+		<a href="https://github.com/hiplon/hiplon.github.io/blob/master/assets/js/search.js">A pure JS-XML Search</a>
+		</small>
+
+		<h2 id="search"></h2>
+		<h4 id="notify" class="mt-2"></h4>
+		<div id="hide">
+			<h5><div id=result>?</div></h5>
+			
+			<h5><ul id="ul1"></ul></h5>
+		
+		</div>
+
+</div>
+<script src="{{ $.Site.BaseURL }}js/search.js"></script>
+{{- end }}

@@ -1,0 +1,32 @@
+
+{{ define "main" -}}
+
+<article>
+		<h1>
+    		{{ .Title }}
+		</h1>
+    		<p style="font-size:90%;">   		
+				
+                By <a href="/about/" rel="author">HKL</a>, on             
+    			<time >{{ .Date.Format "Monday 2006-01-02 15:04" }}</time>,
+
+				tagged: 
+                {{ range .Params.tags }}
+					 <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">
+					   <code class="highligher-rouge"><nobr>🏷️</i>{{- . -}}</nobr></code>&nbsp;
+					 </a>
+				{{ end }}</span>			
+    		</p>
+			
+
+            {{ .Content }}
+            <!-- Share & Comments -->
+</article>			
+		<hr>
+        {{ partial "share.html" . }}
+
+		{{ partial "comment.html" . }}
+
+
+
+{{- end }}

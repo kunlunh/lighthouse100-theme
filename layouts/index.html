@@ -1,0 +1,20 @@
+
+{{ define "main" -}}
+
+<ul class="homepage-list">
+
+{{ range ( .Paginate (where .Site.RegularPages "Type" "post")).Pages }}
+
+	<li>		
+					
+<a href="{{ .Permalink }}">{{ .Title }}</a>
+<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "2006-01-02" }}</time>
+		
+				
+{{- end }}	
+ </ul>
+ 
+	{{ template "_internal/pagination.html" . }}
+	
+
+{{- end }}

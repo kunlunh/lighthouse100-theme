@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+{{ block "header" . }}{{ partial "head.html" .}}{{ end }}
+  <body>
+    <main id="main" role="main">
+		{{ block "banner" . }}{{ partial "banner.html" .}}{{ end }}
+		<!-- Wrap all page content here -->
+					
+		{{ block "main" . }}{{ end }}
+
+		{{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
+		
+    </main>
+  </body>
+</html>

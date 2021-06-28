@@ -1,0 +1,12 @@
+
+{{ define "main" -}}
+
+<article>
+    	<h1>{{ .Title }}</h1>
+            {{ .Content }}
+	{{ block "comment" . }}{{ partial "comment.html" . }}{{ end }}
+</article>
+
+
+
+{{- end }}
