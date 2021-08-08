@@ -1,7 +1,7 @@
 <div class="share">
 	
 	<ul>
-	<li>估计你也会喜欢:</li>
+	<li>Recent posts:</li>
 	<ul>        
 	{{- range ( where site.RegularPages "Section" "post" | first 3 ) }}
 		{{if eq .Type "post" }}
@@ -9,11 +9,8 @@
 		{{ end }}
 	{{ end }}   
 	</ul>
-	
 	</ul>
-	<div style="text-align:center;">        
-	<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh">
-	<img alt="知识共享许可协议" style="border-width:0" src="{{ $.Site.BaseURL }}img/by-nc-4.0.png" /></a><br />
-	本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可。  
+	<div style="text-align:center;">
+	Articles are licensed under <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>
 	</div>
 </div>   
