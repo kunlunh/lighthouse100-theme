@@ -2,12 +2,14 @@
         <h3 style="margin-top:0;">
           <a href="/" title="Home">HKL's Notes</a>
           <br />
-		  <small>Just Record Things.</small>
+		  <small>{{ .Site.Params.Comments }}</small>
 		  
 		  <small style="float:right;">
-		  <a href="https://www.linkedin.com/in/huangkunlun/">Linkedin</a>
+		  <a href="{{.Site.Params.CVurl}}">C.V.</a>
 		  <span> &middot; </span>
-		  <a href="https://github.com/hiplon">Github</a>
+		  <a href="https://www.linkedin.com/in/{{.Site.Params.LinkedinUser}}/">Linkedin</a>
+		  <span> &middot; </span>
+		  <a href="https://github.com/{{.Site.Params.GitHubUser}}">Github</a>
 		  </small>
 		  
         </h3>

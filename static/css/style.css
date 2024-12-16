@@ -10,6 +10,7 @@ a,
 a:visited {
 	color: darkred;
 	text-decoration: none;
+	width: 75%;
 }
 a:hover {
 	text-decoration: underline;

@@ -1,12 +1,12 @@
 name = "lighthouse100-theme"
 license = "MIT"
-licenselink = "https://github.com/hiplon/lighthouse100-theme/blob/master/LICENSE"
+licenselink = "https://github.com/kunlunh/lighthouse100-theme/blob/master/LICENSE"
 description = "A Lighthouse scored 100 theme"
 tags = ["blog", "company"]
-features = ["blog", "themes", "hiplon"]
+features = ["blog", "themes", "kunlunh"]
 min_version = 0.21
 	
 [author]
     name = "HKL"
-    homepage = "https://vnf.cc"
+    homepage = "https://xou.com"
 
